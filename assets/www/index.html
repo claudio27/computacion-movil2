@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>testing</title>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.3.2.min.js"></script>
+	<!-- funciones propias - camara - geo - bd-->
+	<script type="text/javascript" src="js/lib.js"></script>
+	 
+
+
+</head>
+<body onload="buscaPosicion();">
+ 
+	<!-- begin first page -->
+	<section id="page1" data-role="page" data-fullscreen="true">
+		<header data-role="header"><h1>Fotos y Lugares</h1></header>
+		<div data-role="content" class="content">
+			<p>
+				<a  data-role="button" data-theme="b"
+				data-icon="camara" onclick="capturePhoto();">Cámara</a>
+			</p>
+			<p>
+				<a rel="external" data-ajax="false" href="mapa.html" data-role="button" data-theme="b"
+				data-icon="mapa">Lugares</a>
+			</p><!--  onclick="buscaPosicion();" -->
+			<p>
+				<a href="#galeria" data-role="button" data-theme="b"
+				data-icon="galeria">Galería</a>
+			</p>
+				
+			
+			<p>Vista previa</p>
+			
+			<img style="display:none;width:100px;height:100px;" id="smallImage" src="" />
+			
+			<p id="geolocation">Buscando Localización...</p>
+
+			<!-- para pruebas
+			<p><a rel="external" data-ajax="false" href="bd.html"> Bd</a></p>
+			<p><a rel="external" data-ajax="false" href="bd2.html" data-role="button"> Bd 2</a></p>
+			
+			<button onclick="CreaDB();">Crear2</button>
+			<button onclick="Agregar();">Inserta</button>
+			<button onclick="Mostrar();">Mostrar imgii</button>
+
+   			 <p id="resultados"></p>
+			
+			-->
+					
+
+
+
+
+
+		</div>
+		<footer data-role="footer" data-position="fixed">
+	
+
+			<a href="#about" data-rel="dialog" data-role="button" data-inline="true">Acerca de
+			</a>
+		</footer>
+	</section>
+	<!-- end first page -->
+
+	<!-- pagina acerca de -->
+	<section id="about" data-role="page">
+		<header data-role="header"><h1>Computación Móvil</h1></header>
+		<div data-role="content" class="content">
+			<p>Fotos y Lugares</p>
+			<p> Versión 1.0</p>
+			<p>Proyecto Computación Móvil</p>
+
+
+			<p>Desarrolladores</p>
+			<ul>
+				<li>Claudio Serrano</li>
+				<li>Sandra Orozco</li>
+				<li>Francisca Carrasco</li>
+			</ul>
+			<p>Profesor</p>
+			<ul>
+				<li>Felipe Alvarado Mundaca</li>
+			</ul>
+			
+		</div>
+		
+	</section>
+	<!-- fin acerca de -->
+
+	<!-- pagina galeria-->
+	<section id="galeria" data-role="page">
+		<header data-role="header"><h1>Galería</h1></header>
+		
+		<div data-role="content" class="content">
+			<ul data-role="listview" data-inset="true" id="galeriaFotos">
+			
+			</ul>
+		</div>
+	</section>
+
+	
+	<!-- fin pagina galeria-->
+
+
+	</body>
+	</html>
+
+
+

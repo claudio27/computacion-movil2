@@ -1,0 +1,38 @@
+  img{ border: 0; }
+ 
+    .contentMap{
+        width: 300px;
+        border: 1px solid #336699;
+        max-height:415px;
+        overflow:auto;
+    }
+    .contentImg{
+        float: left;
+        width: 300px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .contentImg a{
+        color: #369;
+        font-size: 12px;
+    }
+    .contentTxt{
+        float: left;
+        width: 300px;
+    }
+    .clear{ clear: both; }
+
+     .cuadrado{
+
+    width: 150px; height: 150px; border: 1px solid #000;
+ }
+
+ .cuadrado img{
+   float: left;
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        text-align: center;
+
+ }
+ 

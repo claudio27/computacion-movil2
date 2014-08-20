@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/infoboxestilo.css" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    
+    </style>
+ <!--<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCFSS4jNdb4chwJzA4XKHeCxhDAM4kwkpk&sensor=true">
+
+    </script>-->
+    <script src="jquery.js"></script>
+     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true">
+     </script>
+    <script type="text/javascript" charset="utf-8" src="js/mapaLocal3.js"></script>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+
+  </head>
+  <body onload="BuscaDatos()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+     <div id="datos" class="foto"></div>
+  </body>
+</html>
