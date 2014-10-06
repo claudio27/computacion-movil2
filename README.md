@@ -1,4 +1,4 @@
-Computacion-movil2
+Computación-móvil2
 ==================
 
 2do proyecto computación móvil, semestre primavera 2013
